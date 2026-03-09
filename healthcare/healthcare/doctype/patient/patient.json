@@ -97,11 +97,14 @@
    "read_only": 1
   },
   {
+   "default": "PAT.YYYY.",
    "fieldname": "naming_series",
    "fieldtype": "Select",
+   "hidden": 1,
    "label": "Series",
-   "options": "HLC-PAT-.YYYY.-",
+   "options": "PAT.YYYY.",
    "print_hide": 1,
+   "read_only": 1,
    "report_hide": 1,
    "set_only_once": 1
   },
@@ -612,10 +615,11 @@
   }
  ],
  "max_attachments": 50,
- "modified": "2025-12-25 09:36:34.528457",
+ "modified": "2026-03-09 06:56:51.350158",
  "modified_by": "Administrator",
  "module": "Healthcare",
  "name": "Patient",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {

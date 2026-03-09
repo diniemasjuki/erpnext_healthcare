@@ -58,10 +58,12 @@
  ],
  "fields": [
   {
+   "default": ".ABBR./HC/INS/COV/.YYYY./",
    "fieldname": "naming_series",
    "fieldtype": "Select",
+   "hidden": 1,
    "label": "Series",
-   "options": "INS-COV-.YYYY.-",
+   "options": ".ABBR./HC/INS/COV/.YYYY./",
    "read_only": 1,
    "set_only_once": 1
   },
@@ -72,7 +74,8 @@
    "in_standard_filter": 1,
    "label": "Patient",
    "options": "Patient",
-   "reqd": 1
+   "reqd": 1,
+   "search_index": 1
   },
   {
    "fetch_from": "patient.patient_name",
@@ -419,7 +422,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-12-25 09:36:41.734546",
+ "modified": "2026-03-09 06:52:39.408163",
  "modified_by": "Administrator",
  "module": "Healthcare",
  "name": "Patient Insurance Coverage",

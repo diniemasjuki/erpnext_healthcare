@@ -25,10 +25,13 @@
  ],
  "fields": [
   {
+   "default": ".ABBR./HC/INS/PCON/.YYYY./",
    "fieldname": "naming_series",
    "fieldtype": "Select",
+   "hidden": 1,
    "label": "Series",
-   "options": "PAYOR-CONT-.YYYY.-",
+   "options": ".ABBR./HC/INS/PCON/.YYYY./",
+   "read_only": 1,
    "set_only_once": 1
   },
   {
@@ -113,7 +116,7 @@
  ],
  "is_submittable": 1,
  "links": [],
- "modified": "2025-12-25 09:36:30.884791",
+ "modified": "2026-03-09 07:04:06.281567",
  "modified_by": "Administrator",
  "module": "Healthcare",
  "name": "Insurance Payor Contract",

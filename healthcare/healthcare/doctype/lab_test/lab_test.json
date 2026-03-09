@@ -89,11 +89,14 @@
    "read_only": 1
   },
   {
+   "default": ".ABBR./HC/LAB/.YYYY./",
    "fieldname": "naming_series",
    "fieldtype": "Select",
+   "hidden": 1,
    "label": "Series",
-   "options": "HLC-LAB-.YYYY.-",
+   "options": ".ABBR./HC/LAB/.YYYY./",
    "print_hide": 1,
+   "read_only": 1,
    "report_hide": 1,
    "reqd": 1
   },
@@ -183,7 +186,8 @@
    "label": "Company",
    "options": "Company",
    "print_hide": 1,
-   "report_hide": 1
+   "report_hide": 1,
+   "reqd": 1
   },
   {
    "fieldname": "c_b",
@@ -338,6 +342,7 @@
    "print_hide": 1,
    "report_hide": 1,
    "reqd": 1,
+   "search_index": 1,
    "set_only_once": 1
   },
   {
@@ -639,7 +644,7 @@
    "link_fieldname": "reference_name"
   }
  ],
- "modified": "2025-12-25 09:36:31.745769",
+ "modified": "2026-03-09 07:02:48.136965",
  "modified_by": "Administrator",
  "module": "Healthcare",
  "name": "Lab Test",

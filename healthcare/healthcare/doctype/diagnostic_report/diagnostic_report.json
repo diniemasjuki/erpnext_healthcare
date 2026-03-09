@@ -36,7 +36,8 @@
    "in_standard_filter": 1,
    "label": "Patient",
    "options": "Patient",
-   "read_only": 1
+   "read_only": 1,
+   "search_index": 1
   },
   {
    "fetch_from": "patient.patient_name",
@@ -87,10 +88,13 @@
    "read_only": 1
   },
   {
+   "default": ".ABBR./HC/DIAG/.YYYY./",
    "fieldname": "naming_series",
    "fieldtype": "Select",
+   "hidden": 1,
    "label": "Series",
-   "options": "DIA-RPT-.YYYY.-"
+   "options": ".ABBR./HC/DIAG/.YYYY./",
+   "read_only": 1
   },
   {
    "fieldname": "sample_collection",
@@ -145,7 +149,8 @@
    "in_standard_filter": 1,
    "label": "Company",
    "options": "Company",
-   "read_only": 1
+   "read_only": 1,
+   "reqd": 1
   },
   {
    "fieldname": "title",
@@ -172,7 +177,7 @@
  "in_create": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-12-25 09:36:33.783252",
+ "modified": "2026-03-09 07:14:59.200674",
  "modified_by": "Administrator",
  "module": "Healthcare",
  "name": "Diagnostic Report",

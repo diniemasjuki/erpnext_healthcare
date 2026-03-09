@@ -64,10 +64,13 @@
    "read_only": 1
   },
   {
+   "default": ".ABBR./HC/CPR/.YYYY./",
    "fieldname": "naming_series",
    "fieldtype": "Select",
+   "hidden": 1,
    "label": "Series",
-   "options": "HLC-CPR-.YYYY.-"
+   "options": ".ABBR./HC/CPR/.YYYY./",
+   "read_only": 1
   },
   {
    "fieldname": "appointment",
@@ -186,7 +189,8 @@
    "fieldname": "company",
    "fieldtype": "Link",
    "label": "Company",
-   "options": "Company"
+   "options": "Company",
+   "reqd": 1
   },
   {
    "default": "0",
@@ -374,7 +378,7 @@
    "link_fieldname": "reference_name"
   }
  ],
- "modified": "2026-02-16 18:35:08.776702",
+ "modified": "2026-03-09 07:16:14.313781",
  "modified_by": "Administrator",
  "module": "Healthcare",
  "name": "Clinical Procedure",

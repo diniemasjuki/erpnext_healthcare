@@ -57,7 +57,8 @@
    "in_standard_filter": 1,
    "label": "Patient",
    "options": "Patient",
-   "reqd": 1
+   "reqd": 1,
+   "search_index": 1
   },
   {
    "fetch_from": "patient.patient_name",
@@ -73,7 +74,8 @@
    "label": "Patient Appointment",
    "options": "Patient Appointment",
    "print_hide": 1,
-   "read_only": 1
+   "read_only": 1,
+   "search_index": 1
   },
   {
    "fieldname": "encounter",
@@ -82,7 +84,8 @@
    "label": "Patient Encounter",
    "options": "Patient Encounter",
    "print_hide": 1,
-   "read_only": 1
+   "read_only": 1,
+   "search_index": 1
   },
   {
    "fieldname": "column_break_2",
@@ -219,7 +222,8 @@
    "fieldname": "company",
    "fieldtype": "Link",
    "label": "Company",
-   "options": "Company"
+   "options": "Company",
+   "reqd": 1
   },
   {
    "fieldname": "amended_from",
@@ -236,10 +240,13 @@
    "fieldtype": "Section Break"
   },
   {
+   "default": ".ABBR./HC/VTS/.YYYY./",
    "fieldname": "naming_series",
    "fieldtype": "Select",
+   "hidden": 1,
    "label": "Series",
-   "options": "HLC-VTS-.YYYY.-",
+   "options": ".ABBR./HC/VTS/.YYYY./",
+   "read_only": 1,
    "reqd": 1
   },
   {
@@ -256,7 +263,7 @@
  ],
  "is_submittable": 1,
  "links": [],
- "modified": "2025-12-25 09:36:36.831401",
+ "modified": "2026-03-09 06:40:43.527622",
  "modified_by": "Administrator",
  "module": "Healthcare",
  "name": "Vital Signs",

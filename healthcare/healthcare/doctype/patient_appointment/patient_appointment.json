@@ -101,6 +101,7 @@
    "label": "Appointment Type",
    "options": "Appointment Type",
    "reqd": 1,
+   "search_index": 1,
    "set_only_once": 1
   },
   {
@@ -352,10 +353,11 @@
    "read_only": 1
   },
   {
+   "default": ".ABBR./HC/APP/.YYYY./",
    "fieldname": "naming_series",
    "fieldtype": "Select",
    "label": "Series",
-   "options": "HLC-APP-.YYYY.-",
+   "options": ".ABBR./HC/APP/.YYYY./",
    "set_only_once": 1
   },
   {
@@ -576,7 +578,7 @@
    "link_fieldname": "reference_name"
   }
  ],
- "modified": "2025-12-25 09:36:33.925751",
+ "modified": "2026-03-09 06:56:09.717470",
  "modified_by": "Administrator",
  "module": "Healthcare",
  "name": "Patient Appointment",

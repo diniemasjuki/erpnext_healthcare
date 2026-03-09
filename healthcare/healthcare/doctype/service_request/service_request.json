@@ -8,8 +8,8 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "title",
   "naming_series",
+  "title",
   "order_date",
   "order_time",
   "column_break_4",
@@ -87,10 +87,13 @@
  ],
  "fields": [
   {
+   "default": ".ABBR./HC/SREQ/",
    "fieldname": "naming_series",
    "fieldtype": "Select",
+   "hidden": 1,
    "label": "Series",
-   "options": "HSR-",
+   "options": ".ABBR./HC/SREQ/",
+   "read_only": 1,
    "reqd": 1
   },
   {
@@ -625,7 +628,7 @@
    "link_fieldname": "service_request"
   }
  ],
- "modified": "2025-12-25 09:36:32.576560",
+ "modified": "2026-03-09 06:48:13.413555",
  "modified_by": "Administrator",
  "module": "Healthcare",
  "name": "Service Request",

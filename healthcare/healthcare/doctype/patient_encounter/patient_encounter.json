@@ -77,11 +77,12 @@
    "read_only": 1
   },
   {
+   "default": ".ABBR./HC/ENC/.YYYY./",
    "fieldname": "naming_series",
    "fieldtype": "Select",
    "label": "Series",
    "no_copy": 1,
-   "options": "HLC-ENC-.YYYY.-",
+   "options": ".ABBR./HC/ENC/.YYYY./",
    "set_only_once": 1
   },
   {
@@ -126,7 +127,8 @@
    "fieldname": "company",
    "fieldtype": "Link",
    "label": "Company",
-   "options": "Company"
+   "options": "Company",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_6",
@@ -138,7 +140,8 @@
    "in_standard_filter": 1,
    "label": "Healthcare Practitioner",
    "options": "Healthcare Practitioner",
-   "reqd": 1
+   "reqd": 1,
+   "search_index": 1
   },
   {
    "default": "Today",
@@ -503,7 +506,7 @@
    "link_fieldname": "reference_name"
   }
  ],
- "modified": "2025-12-25 09:36:36.599782",
+ "modified": "2026-03-09 06:53:46.477603",
  "modified_by": "Administrator",
  "module": "Healthcare",
  "name": "Patient Encounter",

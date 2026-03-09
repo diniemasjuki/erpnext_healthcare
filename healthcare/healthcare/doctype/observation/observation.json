@@ -118,7 +118,8 @@
    "in_standard_filter": 1,
    "label": "Patient",
    "options": "Patient",
-   "reqd": 1
+   "reqd": 1,
+   "search_index": 1
   },
   {
    "collapsible": 1,
@@ -133,10 +134,11 @@
    "label": "Description"
   },
   {
+   "default": ".ABBR./HC/OBSV/.YYYY./",
    "fieldname": "naming_series",
    "fieldtype": "Select",
    "label": "Naming",
-   "options": "HLC-OBS-.YYYY.-",
+   "options": ".ABBR./HC/OBSV/.YYYY./",
    "set_only_once": 1
   },
   {
@@ -576,7 +578,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-12-25 09:36:28.860227",
+ "modified": "2026-03-09 06:58:13.973634",
  "modified_by": "Administrator",
  "module": "Healthcare",
  "name": "Observation",

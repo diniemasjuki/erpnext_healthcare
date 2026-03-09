@@ -250,11 +250,14 @@
    "search_index": 1
   },
   {
+   "default": "HC/DOC/.YYYY./",
    "fieldname": "naming_series",
    "fieldtype": "Select",
+   "hidden": 1,
    "label": "Series",
    "no_copy": 1,
-   "options": "HLC-PRAC-.YYYY.-",
+   "options": "HC/DOC/.YYYY./",
+   "read_only": 1,
    "report_hide": 1,
    "set_only_once": 1
   },
@@ -429,7 +432,7 @@
    "link_fieldname": "practitioner"
   }
  ],
- "modified": "2025-12-25 09:36:35.194204",
+ "modified": "2026-03-09 07:09:46.751085",
  "modified_by": "Administrator",
  "module": "Healthcare",
  "name": "Healthcare Practitioner",

@@ -41,10 +41,11 @@
  ],
  "fields": [
   {
+   "default": ".ABBR./HC/THS/.YYYY./",
    "fieldname": "naming_series",
    "fieldtype": "Select",
    "label": "Series",
-   "options": "HLC-THS-.YYYY.-"
+   "options": ".ABBR./HC/THS/.YYYY./"
   },
   {
    "fieldname": "appointment",
@@ -59,7 +60,8 @@
    "in_list_view": 1,
    "label": "Patient",
    "options": "Patient",
-   "reqd": 1
+   "reqd": 1,
+   "search_index": 1
   },
   {
    "fetch_from": "patient.sex",
@@ -139,6 +141,7 @@
    "label": "Therapy Plan",
    "options": "Therapy Plan",
    "reqd": 1,
+   "search_index": 1,
    "set_only_once": 1
   },
   {
@@ -260,7 +263,7 @@
    "link_fieldname": "reference_name"
   }
  ],
- "modified": "2025-12-25 09:36:43.046662",
+ "modified": "2026-03-09 06:43:20.535790",
  "modified_by": "Administrator",
  "module": "Healthcare",
  "name": "Therapy Session",

@@ -25,11 +25,14 @@
  ],
  "fields": [
   {
+   "default": "HC/PMR/.YYYY./",
    "fieldname": "naming_series",
    "fieldtype": "Select",
+   "hidden": 1,
    "label": "Series",
-   "options": "HLC-PMR-.YYYY.-",
+   "options": "HC/PMR/.YYYY./",
    "print_hide": 1,
+   "read_only": 1,
    "report_hide": 1
   },
   {
@@ -124,10 +127,11 @@
  ],
  "in_create": 1,
  "links": [],
- "modified": "2025-12-25 09:36:44.809379",
+ "modified": "2026-03-09 06:50:58.650889",
  "modified_by": "Administrator",
  "module": "Healthcare",
  "name": "Patient Medical Record",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {

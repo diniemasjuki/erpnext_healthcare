@@ -8,8 +8,8 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "title",
   "naming_series",
+  "title",
   "medication",
   "medication_item",
   "order_date",
@@ -69,10 +69,13 @@
  ],
  "fields": [
   {
+   "default": ".ABBR./HC/MREQ/.YYYY./",
    "fieldname": "naming_series",
    "fieldtype": "Select",
+   "hidden": 1,
    "label": "Series",
-   "options": "HMR-",
+   "options": ".ABBR./HC/MREQ/.YYYY./",
+   "read_only": 1,
    "reqd": 1
   },
   {
@@ -469,7 +472,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-12-25 09:36:32.861444",
+ "modified": "2026-03-09 06:59:44.879884",
  "modified_by": "Administrator",
  "module": "Healthcare",
  "name": "Medication Request",

@@ -122,10 +122,13 @@
    "label": "Task Details"
   },
   {
+   "default": ".ABBR./HC/NUR/.YYYY./",
    "fieldname": "naming_series",
    "fieldtype": "Select",
+   "hidden": 1,
    "label": "Naming Series",
-   "options": "HLC-NUR-.YYYY.-"
+   "options": ".ABBR./HC/NUR/.YYYY./",
+   "read_only": 1
   },
   {
    "default": "0",
@@ -246,7 +249,8 @@
    "label": "Patient",
    "options": "Patient",
    "read_only_depends_on": "eval:doc.reference_name",
-   "reqd": 1
+   "reqd": 1,
+   "search_index": 1
   },
   {
    "fieldname": "title",
@@ -324,7 +328,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-01-19 15:34:31.760433",
+ "modified": "2026-03-09 06:58:56.459756",
  "modified_by": "Administrator",
  "module": "Healthcare",
  "name": "Nursing Task",
@@ -375,6 +379,7 @@
    "write": 1
   }
  ],
+ "row_format": "Dynamic",
  "search_fields": "patient, activity, user",
  "sort_field": "requested_start_time",
  "sort_order": "DESC",

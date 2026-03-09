@@ -34,17 +34,21 @@
    "label": "Patient Details"
   },
   {
+   "default": ".ABBR./HC/INPAT/MO/.YYYY./",
    "fieldname": "naming_series",
    "fieldtype": "Select",
+   "hidden": 1,
    "label": "Naming Series",
-   "options": "HLC-IMO-.YYYY.-"
+   "options": ".ABBR./HC/INPAT/MO/.YYYY./",
+   "read_only": 1
   },
   {
    "fieldname": "patient_encounter",
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Patient Encounter",
-   "options": "Patient Encounter"
+   "options": "Patient Encounter",
+   "search_index": 1
   },
   {
    "fetch_from": "patient_encounter.patient",
@@ -53,7 +57,8 @@
    "label": "Patient",
    "options": "Patient",
    "read_only_depends_on": "patient_encounter",
-   "reqd": 1
+   "reqd": 1,
+   "search_index": 1
   },
   {
    "fetch_from": "patient.patient_name",
@@ -169,10 +174,11 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-12-25 09:36:31.239321",
+ "modified": "2026-03-09 07:07:56.344829",
  "modified_by": "Administrator",
  "module": "Healthcare",
  "name": "Inpatient Medication Order",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {
